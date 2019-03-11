@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+background-image:url("art1.jpg");
+}
+</style>
+<body>
+<p>without Using Fig Caption</p>
+  <img src="art3.jpg" alt="3d painting" width="600" height="400">
+<hr>
+<p>Using Fig Caption</p>
+<figure>
+  <img src="art3.jpg" alt="3d painting" width="600" height="400">
+<figcaption><b>Floor broken due to earthquake-3d</b></figcaption>
+</figure>
+<hr>
+</body>
+</head>
+<p>without Using Autoplay</p>
+<audio src="Violin.mp3" controls>
+</audio>
+<hr>
+<p> Autoplay with iframe</p>
+<iframe src="Violin.mp3" allow="autoplay"">
+</iframe>
+<hr>
+<p> Video with poster</p>
+<video src="art6.mp4" controls  width="600" height="400" preload="auto" loop poster="1.png" >
+</video>
+<hr>
+<button onclick="play()">play</button>
+<button onclick="play()">pause</button>
+<button onclick="play()">stop</button>
+<video id="videoplayer" Ontimeupdate="updateprogress()" controls>
+<source src="art6.mp4" type="video/mp4">
+<!--<script>
+var video=document.getElementById(videoplayer)
+ function play(){
+ video.play();
+}
+ function pause(){
+ video.play();
+}
+ function stop(){
+ video.play();
+ video.currentTime=0;
+}-->
+</script>
+</html>
